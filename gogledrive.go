@@ -12,7 +12,7 @@ import (
 	"google.golang.org/api/drive/v3"
 )
 
-// ListFilter provides the available filters for feedind the GetFilesList()
+// ListFilter provides the available filters for feedind the SearchFiles()
 // Use mimeType = 'application/vnd.google-apps.folder' to list folders
 type ListFilter struct {
 	FolderID *string
@@ -20,9 +20,9 @@ type ListFilter struct {
 	MimeType *string
 }
 
-// GetFilesList returns a map where key is the file name and value is the FileId
+// SearchFiles returns a map where key is the file name and value is the FileId
 // that retrieves as search results based on the provided ListFilter
-func GetFilesList(filters ListFilter) (map[string]string, error) {
+func SearchFiles(filters ListFilter) (map[string]string, error) {
 	filesList := map[string]string{}
 	b, err := ioutil.ReadFile("credentials.json")
 	if err != nil {
@@ -72,7 +72,6 @@ func GetFile(fileID string) ([]byte, error) {
 	if err != nil {
 		return fileBuf, errors.New("Unable to read client secret file: " + err.Error())
 	}
-
 	// If modifying these scopes, delete your previously saved token.json.
 	config, err := google.ConfigFromJSON(b, drive.DriveReadonlyScope)
 	if err != nil {
