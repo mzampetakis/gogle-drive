@@ -1,3 +1,7 @@
+#GSuit auth files
+token.json
+credentials.json
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
