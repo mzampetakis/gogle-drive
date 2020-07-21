@@ -59,3 +59,14 @@ data, err := gdrive.GetFile("fileID")
 ```
 
 You can review the whole package's documentation by running `go doc -all .` at this package's folder.
+
+## Contributing
+
+You can contribute to this project by just opening a PR or open first an issue.
+Please describe thoroughly what are your PR solves or adds.
+
+Some ideas for contribution: 
+* upload a file
+* create a file
+* add more filter criteria
+* ...
