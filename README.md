@@ -33,7 +33,7 @@ Then type here the authorization code: paste_here_the_provided_token
 This will produce a token.json in your project's root directory.
 
 ### Examples
-A siple example that lists your google's drive files is provided in [examples/gogledriveexample.go](examples/gogledriveexample.go) file. 
+A siple example that lists your google's drive files is provided in [examples/gogledriveexample.go](https://github.com/mzampetakis/gogle-drive/blob/master/examples/gogledrive_example.go) file. 
 
 To start a new gogledrive's instance simply call:
 
