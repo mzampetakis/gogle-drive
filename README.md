@@ -13,7 +13,7 @@ import github.com/mzampetakis/gogle-drive
 
 ### First Use
 
-Before running your application you must provide a valid json file with the google's API OAuth API client ID.
+Before running your application you must provide a valid json file with the google's API OAuth client ID.
 
 Head to [https://console.developers.google.com/apis/credentials/oauthclient](https://console.developers.google.com/apis/credentials/oauthclient) and add `Desktop App` as Application type. Then provide a name to distinguish your app and press the Create button.
 
